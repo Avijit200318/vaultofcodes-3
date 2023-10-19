@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>SingUp</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 id="headding">Sign Up</h2>
+            <form>
+                <div class="inputBox">
+                    <input type="text" placeholder="Full Name" required="text">
+                    <span id="name"><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Username" required="text">
+                    <span id="user"><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="inputBox">
+                    <input id="password" type="password" placeholder="Password" required="password" onkeyup="checkStrength()">
+                    <span id="lock"><i id="eye" class="fa-regular fa-eye"></i></span>
+                    <p id="passwordStrength1">text</p>
+                </div>
+                <div class="inputBox">
+                    <input id="password2" type="password" placeholder="Confirm" required="password" onkeyup="checkStrength2()">
+                    <span id="confirm"><i id="eye2" class="fa-regular fa-eye"></i></span>
+                    <p id="passwordStrength2" >text</p>
+                </div>
+                <div class="inputBox">
+                    <input type="date" placeholder="Full Name">
+                    <span id="user"><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="inputBox space">
+                    <label id="genId" for="gender">Gender:</label>
+                    <select name="" id="gender">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+                <div id="profilePicBox" class="inputBox space">
+                    <label for="profilePic">Profile Picture:</label>
+                    <input type="file" id="profilePic">
+                </div>
+                <div class="inputBox">
+                    <input id="submit" type="submit" value="Sing Up">
+                </div>
+                <p>Already have an account? <a id="link" href="#">Login</a></p>
+            </form>
+            <div class="icons">
+                <span><i id="facebook" class="fa-brands fa-facebook"></i></span>
+                <span><i id="google" class="fa-brands fa-google"></i></span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
