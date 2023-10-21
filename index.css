@@ -17,11 +17,12 @@ body {
 
 .container {
     width: 380px;
-    height: 700px;
+    height: 745px;
     background-color: transparent;
     backdrop-filter: blur(3px);
     border: 3px solid rgb(129, 129, 215);
     border-radius: 8px;
+    margin: 40px 0;
 }
 
 .form {
@@ -119,10 +120,12 @@ form p a:hover {
     /* font-weight: bold; */
     z-index: 10;
 }
-#passwordStrength1{
+
+#passwordStrength1 {
     top: 250px;
 }
-#passwordStrength2{
+
+#passwordStrength2 {
     top: 313px;
 }
 
@@ -143,6 +146,19 @@ form p a:hover {
     font-weight: normal;
     left: 17px;
 
+}
+
+#labelCheck{
+    font-size: 14px;
+  position: absolute !important;
+  margin: 0 31px;
+}
+
+#infoCheck{
+    width: 100px;
+    height: 21px;
+    position: relative;
+    top: 10px;
 }
 
 .space {
